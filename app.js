@@ -1,4 +1,5 @@
 const express = require('express')
+const dao = require("./dao.js");
 const app = express()
 const port = 3000
 
@@ -13,6 +14,8 @@ app.get("/", (req, res) => {
 
 app.get("/search", (req, res) => {
   // get the query parameter with: req.query.q
+  // get data with dao("sql")
+
 
   res.status(200).sendFile(__dirname+"/public/templates/search.html");
 })

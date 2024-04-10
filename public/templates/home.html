@@ -4,16 +4,515 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hepsiburada | Clone</title>
+    <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
-    <h1>HEEEEPSI BURADA</h1>
 
-    <button id="btn">click</button>
+    <!-- Shared NAVBAR -->
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li>Siparişlerim</li>
+                <li>Süper Fiyat, Süper Teklif</li>
+                <li>Yurt Dışından</li>
+                <li>Kampanyalar</li>
+                <li><span>Girişimci Kadınlar</span></li>
+                <li>Müşteri Hizmetleri</li>
+                <li><span>Hepsiburada Premium</span></li>
+                <li>Hepsiburada'da Satıcı Ol</li>
+            </ul>
+        </div>
+        <div class="nav-main">
+            <div class="nav-logo">
+                <h2>hepsiburada</h2>
+                <h4><span>Premium'u</span> keşfet</h4>
+            </div>
+            <div class="nav-search">
+                <div class="nav-search-icon"><!-- INSERT LOGO --></div>
+                <input type="text" name="search" id="search" placeholder="Ürün, kategori veya marka ara">
+                <div class="nav-search-btn">ARA</div>
+            </div>
+            <div class="nav-location">
+                <div class="nav-location-icon"><!-- INSERT LOGO --></div>
+                <div class="nav-location-text">
+                    <h3>Konum</h3>
+                    <h4>Konum Seç <span><!-- INSERT LOGO --></span></h4>
+                </div>
+            </div>
+            <div class="nav-user">
+                <div class="nav-user-icon"><!-- INSERT LOGO --></div>
+                <div class="nav-user-text">
+                    <h3>Giriş Yap</h3>
+                    <h4>veya üye ol</h4>
+                </div>
+                <div class="nav-user-down-arrow-icon"><!-- INSERT LOGO --></div>
+            </div>
+            <div class="nav-checkout">
+                <div class="nav-checkout-icon"><!-- INSERT LOGO --></div>
+                <div class="nav-checkout-text">
+                    <h3>Sepetim</h3>
+                </div>
+            </div>
+        </div>
+        <div class="nav-rainbow-stripe">
 
+        </div>
+        <div class="nav-categories">
+            <ul>
+                <li>Elektronik</li>
+                <li>Moda</li>
+                <li>Ev, Yaşam, Kırtasiye, Ofis</li>
+                <li>Oto, Bahçe, Yapı Market</li>
+                <li>Anne, Bebek, Oyuncak</li>
+                <li>Spor, Outdoor</li>
+                <li>Kozmetik, Kişisel Bakım</li>
+                <li>Süpermarket, Pet Shop</li>
+                <li>Kitap, Müzik, Film, Hobi</li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <main>
+        <div class="container campaigns">
+            <div class="campaign-list">
+                <ul>
+                    <li>Elektronik</li>
+                    <li>Market</li>
+                    <li>Ev, Yaşam</li>
+                    <li>Moda ve Güzellik</li>
+                    <li>Anne, Çocuk</li>
+                    <li>Oto, Yapı Market</li>
+                    <li>Teknolojik Fırsatlar</li>
+                    <li>Bayram Fırsatları</li>
+                    <li>Ayrıcalıklar</li>
+                </ul>
+            </div>
+            <div class="campaigns">
+                <div class="campaign active-campaign">
+                    <div class="campaign-left">
+                        <div class="campaign-text">
+                            <h3>Favori markların için</h3>
+                            <h2>Son fırsatı yakala</h2>
+                        </div>
+                        <a href="#" class="campaign-btn">Acele et kaçırma</a>
+                    </div>
+                    <div class="campaign-right">
+                        <img src="../img/campaign-elektronik.webp" alt="campaign">
+                    </div>
+                </div>
+                <div class="campaign active-campaign">
+                    <div class="campaign-left">
+                        <div class="campaign-text">
+                            <h3>Saç bakım ürünlerinde</h3>
+                            <h2>850 TL ve üzerine 200 TL indirim</h2>
+                        </div>
+                        <a href="#" class="campaign-btn">Acele et kaçırma</a>
+                    </div>
+                    <div class="campaign-right">
+                        <img src="../img/campaign-market.webp" alt="campaign">
+                    </div>
+                </div>
+                <div class="campaign active-campaign">
+                    <div class="campaign-left">
+                        <div class="campaign-text">
+                            <h3>Mobilya ve yapı market ürünlerinde</h3>
+                            <h2>stoklarla sınırla 24 saatlik fırsatlar</h2>
+                        </div>
+                        <a href="#" class="campaign-btn">Alışverişe başla</a>
+                    </div>
+                    <div class="campaign-right">
+                        <img src="../img/campaign-ev.webp" alt="campaign">
+                    </div>
+                </div>
+                <div class="campaign active-campaign">
+                    <div class="campaign-left">
+                        <div class="campaign-text">
+                            <h3>Birbirinden şık saatlerde</h3>
+                            <h2>fırsatları keşfet</h2>
+                        </div>
+                        <a href="#" class="campaign-btn">Acele et kaçırma</a>
+                    </div>
+                    <div class="campaign-right">
+                        <img src="../img/campaign-moda.webp" alt="campaign">
+                    </div>
+                </div>
+                <div class="campaign active-campaign">
+                    <div class="campaign-left">
+                        <div class="campaign-text">
+                            <h3>Anne ve çocuk ürünlerinde</h3>
+                            <h2>sepette %60'a varan indirim</h2>
+                        </div>
+                        <a href="#" class="campaign-btn">Acele et kaçırma</a>
+                    </div>
+                    <div class="campaign-right">
+                        <img src="../img/campaign-anne.webp" alt="campaign">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container superb-price">
+            <h1 class="superb-price-title">Süper Fiyat, Süper Teklif</h1>
+            <div class="superb-price-products">
+                <div class="superb-price-product">
+                    <img src="../img/superb-price.webp" alt="">
+                </div>
+                <div class="superb-price-product">
+                    <h3>TITLE</h3>
+                    <img src="../img/product-test.jpg" alt="">
+                    <h2>PRICE</h2>
+                </div>
+<!--    add 4 products from db h2 turns to "Sepete ekle" on hover
+                <div class="superb-price-product">
+                    <h3>TITLE</h3>
+                    <img src="" alt="">
+                    <h2>PRICE</h2>
+                </div>
+-->
+            </div>
+        </div>
+
+        <div class="container donation-panel">
+            <div class="donation">
+                <h2>Deprem bölgelerine destek olabilirsiniz</h2>
+                <img src="../img/donation-1.webp" alt="">
+            </div>
+            <div class="donation">
+                <h2>Deprem bölgesi desteklerimiz</h2>
+                <img src="../img/donation-2.webp" alt="">
+            </div>
+            <div class="donation">
+                <h2>3 saatte bir yenilenen fırsatlar</h2>
+                <img src="../img/donation-3.webp" alt="">
+            </div>
+            <div class="donation">
+                <h2>Hepsipay ile tanış</h2>
+                <img src="../img/donation-4.webp" alt="">
+            </div>
+            <div class="donation">
+                <h2>Süper fiyatlarla yurt dışından ürünler</h2>
+                <img src="../img/donation-5.webp" alt="">
+            </div>
+        </div>
+
+        <div class="container brands-section">
+            <h2>Aradığın Markalar</h2>
+            <div class="brands">
+                <div class="brand">
+                    <img src="../img/brand-1.webp" alt="">
+                    <h4>Arzum</h4>
+                </div>
+                <div class="brand">
+                    <img src="../img/brand-2.webp" alt="">
+                    <h4>Bella Maison</h4>
+                </div>
+                <div class="brand">
+                    <img src="../img/brand-3.webp" alt="">
+                    <h4>Ayakkabı Dünyası</h4>
+                </div>
+                <div class="brand">
+                    <img src="../img/brand-4.webp" alt="">
+                    <h4>Regal</h4>
+                </div>
+                <div class="brand">
+                    <img src="../img/brand-5.webp" alt="">
+                    <h4>English Home</h4>
+                </div>
+                <div class="brand">
+                    <img src="../img/brand-6.webp" alt="">
+                    <h4>Marjin</h4>
+                </div>
+                <div class="brand">
+                    <img src="../img/brand-7.webp" alt="">
+                    <h4>HP</h4>
+                </div>
+                <div class="brand">
+                    <img src="../img/brand-8.webp" alt="">
+                    <h4>Emsan</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container popular-section">
+            <h1>Popüler ürünlerden seçtik</h1>
+            <div class="popular-product">
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container topseller-section">
+            <h1>Herkes bu ürünlerin peşinde</h1>
+            <div class="topseller-product">
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container dress-section">
+            <h1>Giyim</h1>
+            <div class="dress-product">
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container popular-discount-section">
+            <h1>Popüler kategorilere özel indirimler</h1>
+            <div class="popular-discount-product">
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container musthave-section">
+            <h1>Günlük ihtiyaçlarda çok satanlar</h1>
+            <div class="musthave-product">
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container longtext">
+            <h4>Alışveriş fırsatları</h4>
+            <p>Türkiye'nin en büyük online alışveriş sitesi Hepsiburada, 2001 yılından bu yana hizmet veriyor. Doğan Holding bünyesinde faaliyet gösteren Hepsiburada, yenilikleri ile Türkiye'nin dijital alışveriş sektörüne yön veriyor. Online alışveriş deneyimini her geçen gün daha kolay hale getiren, dijitalleşen dünyanın gereklerine uygun geliştirmelerle sunduğu hizmetleri daha da avantajlı kılan Hepsiburada, ziyaretçilerine bol çeşit, uygun fiyat, hızlı teslimat ve sürpriz indirimler sunuyor. Bugün 35'ten fazla kategori içinde 20 milyondan fazla ürün çeşidi bulunduran site, 16 milyondan fazla üye ile Türkiye'de e-ticaretin lideri olmanın gururunu yaşıyor.</p>
+            <p>En iyi ürünleri en uygun fiyatlarla, en hızlı teslimatla ve müşteri memnuniyeti hedefiyle sunan Hepsiburada, büyümeye ve Türkiye'de e-ticaret deneyiminin standartlarını her geçen gün yükseltmeye devam ediyor.            </p>
+            <h4>Teknolojnin En İyi Markaları Hepsiburada'da</h4>
+            <p>Hepsiburada'un avantajlarla sunduğu elektronik ürünler içinde bilgisayar modellerinden cep telefonu ürünlerine, bluetooth kulaklık tasarımlarından laptop seçeneklerine, tablet çeşitlerinden akıllı saat ürünlerine kadar birçok alternatif yer alıyor. En iyi teknoloji markaları, özel ürünleri ve avantajlı ödeme seçenekleri ile Hepsiburada'da müşterilerle buluşuyor. Dünyanın en ünlü elektronik markalarından Apple iPhone, Huawei, Samsung ve Xiaomi telefon modelleri, beyaz eşyanın gözdeleri çamaşır ve bulaşık makineleri, küçük ev aletleri sitede sizleri bekliyor. Arnica süpürgelerden Hisar Tencere setlerine, Fakir mikser de dahil olmak üzere evinizin ihtiyacı bir çok seçenek Hepsiburada'da. Hayatı kolaylaştıran en iyi klima modelleri, sıcacık kışlar için soba ve UFO ısıtıcı çeşitleri de elektronikler içinde yer alıyor. Ayrıca PlayStation ve benzeri oyun konsolu alternatifleri ile en popüler konsol oyunları da oyunseverleri bekliyor.</p>
+            <h4>Modanın Nabzını Tutan Tasarımlar Bir Arada</h4>
+            <p>Hepsiburada modayı yakından takip edenlerin de gözdesi.Hepsimoda kategorisinde kadın, erkek, çocuk ve bebek kıyafetlerinin yanı sıra ayakkabı, çanta ve aksesuarları sunan site, moda trendlerini kullanıcılarına sunuyor. Giyim ihtiyaçlarını en trend ürünleri sunarak karşılayan Hepsiburada, günlük giyim alternatiflerinden abiyelere, spor giyimden ofis kıyafetlerine kadar farklı ihtiyaçlar için çeşit vadediyor. Türkiye'nin ve dünyanın sevilen giyim markaları en yeni ürünleriyle sezon modasını gardırobunuza taşıyor. Kışlık kadın kaban seçeneklerinden kazaklara, kadın çizme tasarımlarından topuklu ayakkabı modellerine, tesettür giyim ürünlerinden abiye elbise tasarımlarına kadar aradığınız her şeyi Hepsimoda'da bulabilirsiniz. Hepsiburada'nın her bütçeye, her zevke uygun giyim ürünleri arasından hem kendi ihtiyaçlarınızı karşılayabilir hem de sevdiklerinize hediye alabilirsiniz. Kadın ayakkabı ve erkek spor ayakkabı modellerinde zengin ürün yelpazesi sunan Hepsiburada, çocukların ihtiyaçları için de doğru adres.</p>
+            <h4>Evinizi ve İş Yerinizi Baştan Yaratın</h4>
+            <p>Eviniz ve ofisiniz için ihtiyaç duyduğunuz her şeyi bir arada bulabileceğiniz Hepsiburada aracılığıyla ev dekorasyon ve ofis dekorasyon ürünlerinden ev tekstili tasarımlarına, kırtasiye malzemelerinden okul alışverişi için gerekli olan defter ve kalemlere kadar her şeyi sipariş verebilirsiniz.Ofis kırtasiye gereçlerini hem kendiniz hem de çocuklarınız ve sevdikleriniz için alabilirsiniz. Evinizi baştan yaratacak mobilyalardan çocuklarınıza resim yapmayı sevdirecek renkli kalemlere kadar her şeyiHepsiburada avantajlarıyla bulabilirsiniz.</p>
+            <h4>Aradığınız Yapı Ürünleri Burada</h4>
+            <p>Yapı market ihtiyaçlarınızı birkaç tık ile karşılayabilir, lastik modellerinden otomotiv parçalarına, hırdavat ve nalbur ürünlerinden bahçe gereklerine kadar her şeyi kolaylıkla sipariş edebilirsiniz. Arabanız için tampon arıyor veya sadece bir jant veya araç içi paspas almak istiyor olabilirsiniz, adresiniz aynı. Hepsiburada, büyük küçük tüm ihtiyaçlarınız için hizmetinizde. Kış lastiği mi almanız gerek, aradığınız dünyaca ünlü markalar avantajlarla kapınızda. Petlas lastik ürünleri, Bridgestone lastik alternatifleri aracınıza uygun çeşitlerle seçimi size bırakıyor.Dilerseniz Pirelli lastik, Lassa lastik ya da Michelin lastik seçeneklerini de değerlendirebilirsiniz. Hepsiburada, sürüş deneyiminizi maksimum rahatlığa ulaştıracak navigasyon sistemleri, araç radyoları ve TV ekranlarını da geniş ürün gamında bulunduruyor.</p>
+            <h4>Annelerin de Çocukların da Gözdesi</h4>
+            <p>Annelerin ve anne adaylarının ihtiyaçlarına yanıt veren ürünler arasında ana kucağı, emzik, biberon, bebek arabası, bebek bakımı ürünleri ve çeşit çeşit oyuncak yer alıyor.Anne babaların hayat kolaylaştırmak üzere tasarlanan ürünlerden, siz de çocuğunuz ve kendiniz için en iyisini sipariş verebilirsiniz. Bebeklikten çocukluğu ve ergenliğe kadar çocuklar için yaşa özel ürünler, Hepsiburada'da bir arada bulunuyor. Hepsiburada, Prima bebek bezi veya Huggies bebek bezi çeşitlerini avantajlı kampanyalarla Hepsiburada'da bulabilir, farklı ürünleri kıyaslayabilir, seçiminizi yapabilirsiniz.</p>
+            <h4>Sporu Sevdiren Tasarımlar</h4>
+            <p>Spora hayatında yer açmak isteyenlerin seçimi olan Spor & Outdoor kategorisi, hem kadın hem de erkeklerin farklı branşlar için ihtiyaç duyacağı malzemeleri ve spor giyim ürünlerini bir arada bulunduruyor. Tenis, yürüyüş, koşu veya takım oyunları için gerek duyduğunuz tüm spor ekipmanları Hepsiburada'da sizleri bekliyor. Elektrikli bisikletten olta kamışına, ilgilendiğiniz spor dalında performansınızı artırmak için profesyonel ürünlerden destek alabilirsiniz. Outdoor mont ve outdoor ayakkabı tasarımlarını doğa sporları yaparken ya da yağışlı kış günlerinde tercih edebilirsiniz. Kamp için aradığınız çadır modelleri, koşu için almak istediğiniz spor ayakkabı tasarımları, pilates seanslarınıza konfor katan matlar tek reyonda sizlerle...</p>
+            <h4>Bakımlı Olmak İçin Aradığınız Her Şey</h4>
+            <p>Kadın ve erkeklerin kişisel bakım rutinini kolaylaştıracak binlerce ürün bir arada. Cilt temizleyici kozmetik ürünlerden sağlık araçlarına, hayatınıza güzellik katacak makyaj malzemelerinden parfüm ve deodorantlara kadar banyo dolabınızın tüm ihtiyaçlarını Hepsiburada ayrıcalıklarıyla satın alabilirsiniz. Hepsiburada, cilt tipinize uygun alternatifler, bütçenizi sarsmayan çeşitler, en kaliteli ve seçkin markalar ile sizin de güzellik sırrınız olmaya hazırlanıyor. Calvin Klein parfüm çeşitleri içinde aradığınız kokuyu bulabilirsiniz. Bulgari parfüm çeşitlerini inceleyebilir veya ünlülerin tercihi Chanel parfüm seçenekleri arasından seçim yaparak imzanız olacak parfüme sahip olabilirsiniz.</p>
+            <h4>Kim Demiş Ev Alışverişi Zor Diye?</h4>
+            <p>Hepsiburada süpermarket, petshop ürünleri ile deterjandan mutfak ihtiyaçlarına petshop malzemelerinden gıda alışverişi ne kadar her şeyi sizlere sunuyor.Poşet taşıma, markete zaman ayırma, aradığınız ürünü bulamama devri Hepsiburada ile sona eriyor. Süpermarket siparişinizi oturduğunuz yerden verebilir, tüm alışverişinizin kapınıza gelmesini bekleyebilirsiniz.Hepsiburada, evcil dostlarınızı da düşünüyor. Onlar için özel üretilen ürünler, oyuncaklar ve kıyafetler de sitenin ürün gamında yer alıyor.Market alışverişini zahmet olmaktan çıkaran Hepsiburada, size zaman kazandırıyor.            </p>
+            <h4>Hobileriniz İçin İhtiyaçlarınız Tek Adreste</h4>
+            <p>Kitap müzik film ve hobi kategorisinde yer alan ürünler, yılın en son çıkan kitaplarını, mutlaka okunması gereken kitaplarını, merakla beklenen müzik albümlerini, gişe rekoru kıran film ve dizilerin DVD'lerini, farklı hobilere yönelik kaliteli materyalleri meraklılalrına sunuyor. Hobileriniz için aradığınız her şeyi bulunduran sitede seramik kaleminden ahşap malzemelere, fırçalardan boyalara, klasik romanlardan hobi setlerine kadar tüm ihtiyaçlarınız yer alıyor.</p>
+            <h4>Hediyeniz Hazır mı?</h4>
+            <p>Hepsiburada, yalnız kendiniz için değil sevdikleriniz için yapacağınız alışverişlerde de ayrıcalıklı deneyim vadediyor. Aşkınızı anlatacak özel Sevgililer Günü hediyesi çeşitleri içinde sevgili tişörtleri, esprili aksesuarlar, çift kupaları, oyuncaklar yer alıyor.Yeni yıla iyi dileklerle hatıra kalacak yılbaşı hediyesi alternatifleri de Hepsiburada'da. Kırmızının gözde renk olduğu yeni yıl hediyelerinde dönemsel kampanyalar da düzenleniyor. Özel günlerde hediyelerin en kaliteli ve avantajlısının Hepsiburada'da olduğunu bilenler Babalar Günü ve Anneler Günü hediyesi ararken de yanılmıyor.Annenizin gözlerini yaşartacak o özel hediye veya babanızın ömür boyu saklayacağı Babalar Günü hediyesi Hepsiburada'da karşınıza çıkıyor. Hediyeler için özel oluşturulan seçkiler de kolaylıkla seçim yapmanıza yardım ediyor. Parfümden saat çeşitlerine, güneş gözlüğü alternatiflerinden giyim ürünlerine kadar binlerce hediye çeşidi arasından seçim yapmak biraz zor olsa da özel filtreleme sayesinde en doğru seçeneklere ulaşmanız kolaylaşıyor.</p>
+            <h4>Dünyaca Ünlü Markaların Buluşma Noktası</h4>
+            <p>Hepsiburada kuruluşundan bu yana ziyaretçilerini tüm dünyanın tercih ettiği büyük markalarla buluşturuyor. Diesel saatler en gösterişli modelleri ile sitede yerini alırken Nike spor ayakkabı çeşitleri sezon modası ürünleri ile beğeniye sunuluyor.Giyimden mobilyaya, aksesuardan market ürünlerine kadar binlerce seçenek en iyi markaların garantisi ile Hepsiburada çatısı altında yer alıyor. Teknoloji devi markaların bilgisayar modelleri, akıllı telefonları veya kol saati seçenekleri garanti belgeleri ile kullanıcılara ulaşıyor.Dilerseniz kendiniz için kalite güvencesiyle Guess saat veya kadın güneş gözlüğü alabilir veya Casio saatler, dünyaca ünlü markaların çanta modelleri içinden sevdikleriniz için en güzel hediyeyi seçebilirsiniz.</p>
+            <p>Hepsiburada, farklı kategorilerde zengin ürün çeşitliliği ve güvenilir tedarikçileri ile konforlu e-ticaretin adresi olmaya devam ediyor.Üstelik Hepsiburada, şimdi kendi teslimat ağıyla her zamankinden daha hızlı! Kimi ürünlerde hizmete başlayan Hepsiexpress, müşteri memnuniyeti için siparişlerin en kısa sürede teslim edilmesini sağlıyor. Her geçen gün getirdiği yenilikler, genişleyen ürün gamı ve üstün teslimat ağıyla daha iyi hizmet için çalışan Hepsiburada, uzman kadrosu ile fark yaratıyor.Profesyonel ve deneyimli müşteri destek ekibi, 7 gün 24 saat soru, sorun ve önerileriniz için sizlere hizmet sunarken, çözüm odaklı işleyiş standartları alışverişte kalite çıtasını yukarı taşıyor.Siz de aradığınız ürünü Hepsiburada'da bulabilir, kolaylıkla sipariş vererek yeni nesil alışverişi en doğru adreste deneyimleyebilirsiniz. Türkiye'nin en büyük online alışveriş sitesi Hepsiburada hizmetinizde.</p>
+            <div class="longtext-toggle">Devamını Göster</div>
+        </div>
+    </main>
+
+    <!-- Shared FOOTER -->
+    <footer>
+
+    </footer>
+    <!-- FOOTER END -->
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
     <script src="../js/home.js"></script>
 
 </body>
