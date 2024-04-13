@@ -7,6 +7,10 @@
     font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* NAVBAR */
 nav {
     width: 100%;

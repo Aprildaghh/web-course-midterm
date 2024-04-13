@@ -1,4 +1,3 @@
-1. SEARCH page html css
 2. DETAIL page html css
 3. create a db schema
 4. gather data from hepsiburada
