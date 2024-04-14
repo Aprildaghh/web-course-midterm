@@ -1,20 +1,41 @@
-var mysql = require('mysql');
+var mysql = require('mysql2');
 
-// TODO: change username and password
 var con = mysql.createConnection({
     host: "localhost",
-    user: "username",
-    password: "password"
+    user: "root",
+    password: "zxcasd45",
+    database: "web-20070006006"
 })
 
-module.exports =  function(sql) {
+const getDescriptionsById = (id) => {
     con.connect(function(err) {
         if(err) throw err;
-        
+    
+        const sql = "SELECT * FROM description WHERE product_id=" + id;
+            
         con.query(sql, function (err, result) {
             if (err) throw err;
-            
-            return result;
+            else return result;
         });
     })
 }
+
+const getProductsByCategory = (category) => {
+    con.connect(function(err) {
+        if(err) throw err;
+        
+        const sql = "select * from product where category like '%" + category.toLowerCase() + "%'";
+
+        con.query(sql, function (err, result) {
+            if (err) throw err;
+            else return result;
+        });
+
+    })
+}
+
+console.log(getDescriptionsById(1));
+console.log(getProductsByCategory("laptop"));
+
+
+module.exports = {getDescriptionsById, getProductsByCategory}
