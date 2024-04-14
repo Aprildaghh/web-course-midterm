@@ -317,8 +317,15 @@
                             <h3>Konumunuzu seçerek hızlı teslimattan faydalanın</h3>
                         </div>
                         <div class="right__section-location-bar">
-                            <i class="bi bi-geo-alt"></i>
-                            <h1>İzmir</h1>
+                                <form action="#">
+                                        <label for="location"><i class="bi bi-geo-alt"></i></label>
+                                        <input list="city" name="location" placeholder="Location">
+                                        <datalist id="city">
+                                                <option value="İzmir">
+                                                <option value="İstanbul">
+                                                <option value="Ankara">
+                                        </datalist>
+                                </form>
                         </div>
                     </div>
                     <div class="right__section-early-delivery">

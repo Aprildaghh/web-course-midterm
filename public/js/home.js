@@ -71,3 +71,30 @@ $("#btn").click(function(){
  * popülerlere özel indirimler
  * günlük ihtiyaçlarda topseller
  */
+
+
+
+/*
+
+for superb
+
+                <div class="superb-price-product">
+                    <h3>TITLE</h3>
+                    <img src="../img/product-test.jpg" alt="">
+                    <h2>PRICE</h2>
+                </div>
+
+
+
+for other products
+
+
+                <div class="product">
+                    <img src="../img/product-test.jpg" alt="">
+                    <h4>TITLE</h4>
+                    <h3>PRICE</h3>
+                    <h2>DISCOUNT</h2>
+                </div>
+
+
+*/

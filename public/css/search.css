@@ -67,13 +67,26 @@ section {
     font-size: 14px;
 }
 
+.right__section-location-bar input {
+    font-size: 14px;
+    outline: none;
+    border: none;
+    background-color: rgb(245, 205, 146);
+    color: orangered;
+    width: 90px;
+}
+
+.right__section-location-bar input::placeholder {
+    color: orangered;
+}
+
 .right__section-location-bar::after {
     content: "";
     background-color: #727272;
-    height: 70px;
+    height: 160%;
     width: 1px;
     position: absolute;
-    left: 93px;
+    left: 110%;
 }
 .right__section-early-delivery-container {
     text-align: center;
