@@ -54,12 +54,21 @@ campaignList.addEventListener("click", (e) => {
 })
 
 
+
+
 /*
+
 $("#btn").click(function(){
-    $.get("http://localhost:3000/test", function(data, status){
-        alert("Data: " + data + "\nStatus: " + status);
+    $.get("http://localhost:3000/api/product/laptop", function(data, status){
+    
+        let res = JSON.stringify(data);
+        let theData = JSON.parse(res);
+
+        // USE THE DATA
+
     });
 });
+
 */
 
 /**

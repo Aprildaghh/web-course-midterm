@@ -1,9 +1,16 @@
 const express = require('express')
-const dao = require("./dao.js");
 const app = express()
 const port = 3000
+const mysql = require('mysql2');
 
 app.use(express.static('public'))
+
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "zxcasd45",
+  database: "web-20070006006"
+})
 
 // CONTROLLERS
 
@@ -30,6 +37,39 @@ app.get("/detail", (req, res) => {
 
 app.get("/test", (req, res) => {
   res.status(200).send("test");
+})
+
+app.get("/api/description/:id", (req, res) => {
+  con.connect(function(err) {
+    if(err) throw err;
+
+    const sql = "SELECT * FROM description WHERE product_id=" + req.params.id;
+        
+    con.query(sql, function (err, result) {
+        if (err) throw err;
+
+      console.log(result);
+
+        res.status(200).send(result);
+
+    });
+})
+})
+
+app.get("/api/product/:category", (req, res) => {
+  con.connect(function(err) {
+    if(err) throw err;
+    
+    const sql = "select * from product where category like '%" + req.params.category.toLowerCase() + "%'";
+
+    con.query(sql, function (err, result) {
+        if (err) throw err;
+        
+        res.status(200).send(result);
+
+    });
+
+})
 })
 
 
