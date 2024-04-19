@@ -53,57 +53,152 @@ campaignList.addEventListener("click", (e) => {
 
 })
 
+// GATHER DATA FROM DB
+const getData = function(){
 
+    const currentUrl = window.location.href;
 
-
-/*
-
-$("#btn").click(function(){
-    $.get("http://localhost:3000/api/product/laptop", function(data, status){
+    // süper fiyat süper teklif
+    $.get("http://localhost:3000/api/product/superb", function(data, status){
     
+        const productsEl = document.querySelector(".superb-price-products")
         let res = JSON.stringify(data);
         let theData = JSON.parse(res);
 
         // USE THE DATA
-
+        let productEl = "";
+        const url = window.location.href;
+        for(let i = 0; i < theData.length; i++)
+        {
+            productEl += `
+            <div class="superb-price-product">
+                <h3>${theData[i].title}</h3>
+                <img src="${theData[i].image}" alt="">
+                <h2>${theData[i].price}</h2>
+            </div>
+            `;
+        }
+        productsEl.innerHTML += productEl;
     });
+
+    // popüler ürünler
+    $.get("http://localhost:3000/api/product/popular-chosen", function(data, status){
+    
+        const productsEl = document.querySelector(".popular-product")
+        let res = JSON.stringify(data);
+        let theData = JSON.parse(res);
+
+        // USE THE DATA
+        let productEl = "";
+        const url = window.location.href;
+        for(let i = 0; i < theData.length; i++)
+        {
+            productEl += `
+            <a style="display: block;" class="product" href="${url + "detail/" + theData[i].id}">
+                <img src="${theData[i].image}" alt="">
+                <h4>${theData[i].title}</h4>
+                <h3>${theData[i].price}</h3>
+            </a>
+            `;
+        }
+        productsEl.innerHTML = productEl;
+    });
+
+    // herkes bu ürünlerin peşinde
+    $.get("http://localhost:3000/api/product/topseller", function(data, status){
+    
+    const productsEl = document.querySelector(".topseller-product")
+    let res = JSON.stringify(data);
+    let theData = JSON.parse(res);
+
+    // USE THE DATA
+    let productEl = "";
+    const url = window.location.href;
+    for(let i = 0; i < theData.length; i++)
+    {
+        productEl += `
+        <a style="display: block;" class="product" href="${url + "detail/" + theData[i].id}">
+            <img src="${theData[i].image}" alt="">
+            <h4>${theData[i].title}</h4>
+            <h3>${theData[i].price}</h3>
+        </a>
+        `;
+    }
+    productsEl.innerHTML = productEl;
 });
 
-*/
 
-/**
- * TODO: add items for:
- * süper fiyat süper teklif
- * popüler ürünler
- * herkes bu ürünlerin peşinde
- * giyim
- * popülerlere özel indirimler
- * günlük ihtiyaçlarda topseller
- */
+    // giyim
+    $.get("http://localhost:3000/api/product/dress", function(data, status){
+    
+    const productsEl = document.querySelector(".dress-product")
+    let res = JSON.stringify(data);
+    let theData = JSON.parse(res);
 
-
-
-/*
-
-for superb
-
-                <div class="superb-price-product">
-                    <h3>TITLE</h3>
-                    <img src="../img/product-test.jpg" alt="">
-                    <h2>PRICE</h2>
-                </div>
-
-
-
-for other products
+    // USE THE DATA
+    let productEl = "";
+    const url = window.location.href;
+    for(let i = 0; i < theData.length; i++)
+    {
+        productEl += `
+        <a style="display: block;" class="product" href="${url + "detail/" + theData[i].id}">
+            <img src="${theData[i].image}" alt="">
+            <h4>${theData[i].title}</h4>
+            <h3>${theData[i].price}</h3>
+        </a>
+        `;
+    }
+    productsEl.innerHTML = productEl;
+});
 
 
-                <div class="product">
-                    <img src="../img/product-test.jpg" alt="">
-                    <h4>TITLE</h4>
-                    <h3>PRICE</h3>
-                    <h2>DISCOUNT</h2>
-                </div>
+    // popülerlere özel indirimler
+    $.get("http://localhost:3000/api/product/popular-discount", function(data, status){
+    
+    const productsEl = document.querySelector(".popular-discount-product")
+    let res = JSON.stringify(data);
+    let theData = JSON.parse(res);
+
+    // USE THE DATA
+    let productEl = "";
+    const url = window.location.href;
+    for(let i = 0; i < theData.length; i++)
+    {
+        productEl += `
+        <a style="display: block;" class="product" href="${url + "detail/" + theData[i].id}">
+            <img src="${theData[i].image}" alt="">
+            <h4>${theData[i].title}</h4>
+            <h3>${theData[i].price}</h3>
+        </a>
+        `;
+    }
+    productsEl.innerHTML = productEl;
+});
 
 
-*/
+    // günlük ihtiyaçlarda topseller
+    $.get("http://localhost:3000/api/product/musthave", function(data, status){
+    
+        const productsEl = document.querySelector(".musthave-product")
+        let res = JSON.stringify(data);
+        let theData = JSON.parse(res);
+
+        // USE THE DATA
+        let productEl = "";
+        const url = window.location.href;
+        for(let i = 0; i < theData.length; i++)
+        {
+            productEl += `
+            <a style="display: block;" class="product" href="${url + "detail/" + theData[i].id}">
+                <img src="${theData[i].image}" alt="">
+                <h4>${theData[i].title}</h4>
+                <h3>${theData[i].price}</h3>
+            </a>
+            `;
+        }
+        productsEl.innerHTML = productEl;
+    });
+    
+};
+
+getData();

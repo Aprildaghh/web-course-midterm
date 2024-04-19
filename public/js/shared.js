@@ -14,4 +14,15 @@ searchBar.addEventListener("focusout", () => {
     navSearchBtn.style.background = "#727272";
 })
 
+// search function
+const inputEl = document.getElementById("search")
+inputEl.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    
+    window.location.replace(window.location.href + "search/" + inputEl.value);
 
+  }
+});

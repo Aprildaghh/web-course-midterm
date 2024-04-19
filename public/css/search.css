@@ -189,7 +189,13 @@ section {
     padding: 10px;
     justify-content: center;
     align-items: center;
-    width: max-content;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+.product_image_container img {
+    width: 100%;
 }
 
 .product_info_container {

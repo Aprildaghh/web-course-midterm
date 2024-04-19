@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 })
 
 
-app.get("/search", (req, res) => {
+app.get("/search/**", (req, res) => {
   // get the query parameter with: req.query.q
   // get data with dao("sql")
 
@@ -28,16 +28,12 @@ app.get("/search", (req, res) => {
 })
 
 
-app.get("/detail", (req, res) => {
+app.get("/detail/**", (req, res) => {
   res.status(200).sendFile(__dirname+"/public/templates/detail.html");
 })
 
 
 // REST CONTROLLERS
-
-app.get("/test", (req, res) => {
-  res.status(200).send("test");
-})
 
 app.get("/api/description/:id", (req, res) => {
   con.connect(function(err) {
@@ -47,8 +43,6 @@ app.get("/api/description/:id", (req, res) => {
         
     con.query(sql, function (err, result) {
         if (err) throw err;
-
-      console.log(result);
 
         res.status(200).send(result);
 
@@ -61,6 +55,22 @@ app.get("/api/product/:category", (req, res) => {
     if(err) throw err;
     
     const sql = "select * from product where category like '%" + req.params.category.toLowerCase() + "%'";
+
+    con.query(sql, function (err, result) {
+        if (err) throw err;
+        
+        res.status(200).send(result);
+
+    });
+
+})
+})
+
+app.get("/api/productById/:id", (req, res) => {
+  con.connect(function(err) {
+    if(err) throw err;
+    
+    const sql = "select * from product where id=" + req.params.id;
 
     con.query(sql, function (err, result) {
         if (err) throw err;
