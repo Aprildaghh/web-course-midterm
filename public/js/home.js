@@ -59,7 +59,7 @@ const getData = function(){
     const currentUrl = window.location.href;
 
     // süper fiyat süper teklif
-    $.get("http://localhost:3000/api/product/superb", function(data, status){
+    $.get(window.location.origin + "/api/product/superb", function(data, status){
     
         const productsEl = document.querySelector(".superb-price-products")
         let res = JSON.stringify(data);
@@ -82,7 +82,7 @@ const getData = function(){
     });
 
     // popüler ürünler
-    $.get("http://localhost:3000/api/product/popular-chosen", function(data, status){
+    $.get(window.location.origin + "/api/product/popular-chosen", function(data, status){
     
         const productsEl = document.querySelector(".popular-product")
         let res = JSON.stringify(data);
@@ -105,7 +105,7 @@ const getData = function(){
     });
 
     // herkes bu ürünlerin peşinde
-    $.get("http://localhost:3000/api/product/topseller", function(data, status){
+    $.get(window.location.origin + "/api/product/topseller", function(data, status){
     
     const productsEl = document.querySelector(".topseller-product")
     let res = JSON.stringify(data);
@@ -129,7 +129,7 @@ const getData = function(){
 
 
     // giyim
-    $.get("http://localhost:3000/api/product/dress", function(data, status){
+    $.get(window.location.origin + "/api/product/dress", function(data, status){
     
     const productsEl = document.querySelector(".dress-product")
     let res = JSON.stringify(data);
@@ -153,7 +153,7 @@ const getData = function(){
 
 
     // popülerlere özel indirimler
-    $.get("http://localhost:3000/api/product/popular-discount", function(data, status){
+    $.get(window.location.origin + "/api/product/popular-discount", function(data, status){
     
     const productsEl = document.querySelector(".popular-discount-product")
     let res = JSON.stringify(data);
@@ -177,7 +177,7 @@ const getData = function(){
 
 
     // günlük ihtiyaçlarda topseller
-    $.get("http://localhost:3000/api/product/musthave", function(data, status){
+    $.get(window.location.origin + "/api/product/musthave", function(data, status){
     
         const productsEl = document.querySelector(".musthave-product")
         let res = JSON.stringify(data);

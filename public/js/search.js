@@ -4,7 +4,7 @@ const getData = function(){
 
     category = currentUrl.split("/")[currentUrl.split("/").length-1];
 
-    $.get("http://localhost:3000/api/product/"+category, function(data, status){
+    $.get(window.location.origin + "/api/product/"+category, function(data, status){
     
         const productsEl = document.getElementById("products")
         let res = JSON.stringify(data);

@@ -4,7 +4,7 @@ const getData = function(){
 
     id = currentUrl.split("/")[currentUrl.split("/").length-1];
 
-    $.get("http://localhost:3000/api/productById/"+id, function(data, status){
+    $.get(window.location.origin + "/api/productById/"+id, function(data, status){
     
         const img = document.getElementById("product-img");
         const title = document.getElementById("title");
@@ -24,7 +24,7 @@ const getData = function(){
 
     });
 
-    $.get("http://localhost:3000/api/description/"+id, function(data, status){
+    $.get(window.location.origin + "/api/description/"+id, function(data, status){
     
     const productDescription = document.getElementById("description");
 
