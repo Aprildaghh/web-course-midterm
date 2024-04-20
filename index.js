@@ -6,9 +6,9 @@ const mysql = require('mysql2');
 app.use(express.static('public'))
 
 var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "zxcasd45",
+  host: "web-midterm-server.mysql.database.azure.com",
+  user: "syolkapdog",
+  password: "webmidterm_125",
   database: "web-20070006006"
 })
 
@@ -20,10 +20,6 @@ app.get("/", (req, res) => {
 
 
 app.get("/search/**", (req, res) => {
-  // get the query parameter with: req.query.q
-  // get data with dao("sql")
-
-
   res.status(200).sendFile(__dirname+"/public/templates/search.html");
 })
 
@@ -81,8 +77,6 @@ app.get("/api/productById/:id", (req, res) => {
 
 })
 })
-
-
 
 // START APPLICATION
 app.listen(port, () => {
