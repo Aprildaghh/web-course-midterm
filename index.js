@@ -6,9 +6,9 @@ const mysql = require('mysql2');
 app.use(express.static('public'))
 
 var con = mysql.createConnection({
-  host: "web-midterm-server.mysql.database.azure.com",
-  user: "syolkapdog",
-  password: "webmidterm_125",
+  host: "DB_HOST",
+  user: "DB_USER",
+  password: "DB_PASS",
   database: "web-20070006006"
 })
 
